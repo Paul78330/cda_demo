@@ -1,0 +1,16 @@
+#Définition des étapes de notre pipeline CI/CD
+stages:
+  - build #Première étape : contruction du projet
+  - test #Deuxième étape : test du projet 
+#Définition des jobs de notre pipeline CI/CD
+build_job:
+  stage: build #Le job build_job appartient à l'étape build
+  script:
+    - echo "Building the project" #Affiche "Building the project" dans la console
+
+#Définition du job de test
+test_job:
+  stage: test #Le job test_job appartient à l'étape test
+  script:
+    - echo "Running tests" #Affiche "Running tests" dans la console
+    
